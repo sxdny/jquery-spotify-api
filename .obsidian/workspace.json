@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "908d781efb0a68f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "717863035ad6cbef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "307d203c8ac22f5a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "57189b136a9aaaea",
+    "type": "split",
+    "children": [
+      {
+        "id": "6de14d2920af4b44",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ee9438f83feb6a5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "19c6229a7b5a8523",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "70f09210eb454e61",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b1f56e49e90c23b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "185ce9a6b6ca10c6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29a8e7d4720e9265",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2878803a849ab22e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b5855ff5af5cf16d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7b6286e2e8a01fd2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "307d203c8ac22f5a",
+  "lastOpenFiles": [
+    "node_modules/dotenv/config.d.ts",
+    "node_modules/dotenv/README.md",
+    "node_modules/dotenv/README-es.md",
+    "node_modules/dotenv/CHANGELOG.md",
+    "node_modules/dotenv/package.json",
+    "node_modules/dotenv/config.js",
+    "node_modules/dotenv/lib/main.js",
+    "node_modules/dotenv/lib/main.d.ts",
+    "node_modules/dotenv/lib/env-options.js",
+    "node_modules/dotenv/lib/cli-options.js",
+    "node_modules/dotenv/lib",
+    "node_modules/dotenv/LICENSE",
+    "node_modules/dotenv",
+    "node_modules/source-map/lib/source-map/util.js",
+    "node_modules/amdefine/README.md",
+    "Enunciado Actividad 5 UD6.md",
+    "public/Enunciado Actividad 5 UD6.md",
+    "node_modules/object-inspect/CHANGELOG.md",
+    "node_modules/define-data-property/README.md",
+    "node_modules/body-parser/HISTORY.md",
+    "node_modules/function-bind/CHANGELOG.md",
+    "node_modules/call-bind/CHANGELOG.md",
+    "node_modules/set-function-length/CHANGELOG.md",
+    "node_modules/negotiator/README.md",
+    "node_modules/hasown/README.md",
+    "node_modules/get-intrinsic/README.md",
+    "node_modules/negotiator/HISTORY.md",
+    "node_modules/side-channel/CHANGELOG.md",
+    "node_modules/has-property-descriptors/README.md",
+    "node_modules/has-property-descriptors/CHANGELOG.md",
+    "node_modules/send/SECURITY.md",
+    "node_modules/gopd/README.md",
+    "node_modules/cookie/SECURITY.md",
+    "node_modules/gopd/CHANGELOG.md",
+    "node_modules/statuses/README.md",
+    "node_modules/raw-body/SECURITY.md"
+  ]
+}

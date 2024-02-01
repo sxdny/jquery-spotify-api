@@ -4,4 +4,60 @@
 /* Set Inter as the default font */
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #161515;
+  color: white;
+  display: grid;
+  place-items: center;
 }
+
+img {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+#spotify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#artistName {
+  font-size: 1rem;
+  background-color: #1f1f1f;
+  padding: 1rem 2rem;
+  color: lightgray;
+  border-radius: 5rem;
+  border: 0.5px solid #1f1f1f;
+}
+
+#artistName:hover {
+  background-color: #222;
+  border: 0.5px solid rgb(66, 66, 66);
+}
+
+#results {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  margin: 10px;
+  padding: 2rem;
+  border: 1px solid rgb(71, 71, 71);
+  border-radius: 10px;
+  text-align: center;
+  background-color: #1f1f1f;
+}
+

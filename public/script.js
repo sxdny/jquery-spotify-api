@@ -34,6 +34,7 @@ $(function () {
   var spotify = new Spotify();
 
   $('#artistName').on('input', function () {
+    spotify.getSongs($('#artistName').val());
     spotify.getArtist($('#artistName').val());
   });
 
@@ -55,17 +56,63 @@ Spotify.prototype.getArtist = function (artist) {
   }).done(function (response) {
     console.log(response);
 
-    $('#results').empty();
+    $('#artists').empty();
 
-    for (let i = 0; i < response.artists.items.length; i++) {
-      $('#results').append(
+    if (response.artists.items.length === 0) {
+      $('#artists').append(
         `
-        <div class="artist">
-          <img src="${response.artists.items[i].images[0].url}" alt="artist image" width="100" height="100">
-          <a href="https://open.spotify.com/intl-es/artist/${response.artists.items[i].id}" class="artistId" data-id="${response.artists.items[i].id}">${response.artists.items[i].name}</a>
-        </div>
-        `);
+          <p>No artists with this name has been found...</p>
+        `
+      );
+    } else {
+      for (let i = 0; i < response.artists.items.length; i++) {
+        $('#artists').append(
+          `
+          <div class="artist">
+            <img src="${response.artists.items[i].images[0].url}" alt="artist image" width="100" height="100">
+            <a href="https://open.spotify.com/intl-es/artist/${response.artists.items[i].id}" class="artistId" data-id="${response.artists.items[i].id}">${response.artists.items[i].name}</a>
+          </div>
+          `);
+      }
     }
+  });
+};
+
+Spotify.prototype.getSongs = function (song) {
+
+  $.ajax({
+    type: "GET",
+    url: this.apiUrl + 'v1/search?type=track&q=' + song,
+    headers: {
+      'Authorization': 'Bearer ' + access_token
+    },
+  }).done(function (response) {
+    console.log(response)
+
+    $('#songs').empty();
+
+    if (response.tracks.items.length === 0) {
+      $('#songs').append(
+        `
+          <p>No songs with this name has been found...</p>
+        `
+      );
+    } else {
+      for (let i = 0; i < response.tracks.items.length; i++) {
+        $('#songs').append(
+          `
+          <button class="song">
+            <img src="${response.tracks.items[i].album.images[0].url}" alt="song image" width="100" height="100">
+            <div class="songInfo">
+              <a href="${response.tracks.items[i].external_urls.spotify}">${response.tracks.items[i].name}</a>
+              <p>${response.tracks.items[i].artists[0].name}</p>
+            </div>
+          </button>
+          `);
+      }
+    }
+
+
   });
 };
 
